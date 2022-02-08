@@ -1,0 +1,38 @@
+extends ../../layout.pug
+block contenido
+
+  section(class="sidenav")
+    h1 Administrador 
+    a(href="#") Usuario Actual 
+    div(class="sidenav-editar")  
+      a(href="#") Agregar Producto 
+      a(href="#") Editar Productos 
+      a(href="#") Editar Pagina Principal 
+      a(href="#") Base de Usuarios  
+    
+  section(class="new")
+    h1 Agregar Producto
+      form(method="post" action="/productos" class="new-form" enctype="multipart/form-data")
+        div(class="grupo-form")
+          label Nombre 
+          input(type="text" name="title" placeholder="Nombre del producto" class="input-form")
+        div(class="grupo-form")
+          label Precio 
+          input(type="number" name="price" placeholder="Precio del producto" class="input-form")
+        div(class="grupo-form")
+          label Descripción 
+          textarea(name="description" placeholder="Descripción del producto" class="input-form")
+        div(class="grupo-form")
+          label Categoria  
+          select(name="category") 
+            option(value="cartera") Cartera 
+            option(value="mochila") Mochila 
+            option(value="joyeria") Joyeria 
+        div(class="grupo-form")
+          label Imagen Principal Del Producto 
+          input(type="file" name="image_avatar")  
+        div(class="grupo-form")
+          label Contraseña 
+          input(type="password" name="password" placeholder="Contraseña" class="input-form")   
+        div(class="grupo-form")
+          input(type="submit" class="boton-form" value="Guardar")         
