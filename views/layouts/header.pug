@@ -1,0 +1,41 @@
+extends ../layout.pug
+block contenido
+
+  header(class="header")
+    div(class="flex-container flex-space-between")
+      div(class="flex-container")
+        a(href="#")
+          img(src="./css/logo-kuala-prototipo.png" alt="Logo Kuala" class="logo")
+        nav(class="navbar nb-original")
+          a(href="#") opcion 1
+          a(href="#") opcion 2
+          a(href="#") opcion 3
+          a(href="#") opcion 4
+          a(href="#") opcion 5
+          a(href="#") opcion 6
+          a(href="#") opcion 7
+      div(class="flex-container flex-space-between item-nav")
+        form(action="#" class="busqueda flex-container")
+          input(type="text" placeholder="Buscar" name="buscador")
+          button(type="submit")
+            i(class="fa fa-search")
+        form(action="#" class="busqueda-oculta flex-container")
+          input(type="text" placeholder="Buscar" name="buscador")
+          a(href="#" class="boton-oculto")
+            i(class="fa fa-search")
+        a(href="#") 
+          i(class="fas fa-shopping-cart")
+    div(class="hidden-bar")
+      nav(class="navbar flex-container flex-space-evenly contenedor")
+          a(href="#") opcion 1
+          a(href="#") opcion 2
+          a(href="#") opcion 3
+          a(href="#") opcion 4
+          a(href="#") opcion 5
+          a(href="#") opcion 6
+          a(href="#") opcion 7  
+
+  block header
+        
+    
+    

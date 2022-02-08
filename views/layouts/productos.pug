@@ -1,0 +1,45 @@
+extends ./header.pug
+block header 
+
+  section(class="")
+    div(class="bannner-metodo-pago")
+      div(class="metodo-pago")
+        i(class="far fa-credit-card")
+        h3 Tarjeta 
+      div(class="metodo-pago")
+        i(class="far fa-credit-card")
+        h3 Tarjeta 
+      div(class="metodo-pago")
+        i(class="far fa-credit-card")
+        h3 Tarjeta 
+    div(class="titulo-productos")
+      h3 Titulo 
+      select(name="#")
+        option(value="opcion")  
+      div(class="seccion-productos")
+        div(class="sidebar-productos")
+          div(class="nombres-productos")
+            h3 Titulo 
+            h4 Otro producto
+            h4 Otro producto
+            h4 Otro producto
+          h4 Filtros 
+          div(class="filtros-productos")
+            div(class="color-productos")
+              div(class="seleccionar-color")
+                label Color 
+                input(type="checkbox", name="#")
+              div(class="seleccionar-color")
+                label Color 
+                input(type="checkbox", name="#")
+              div(class="seleccionar-color")
+                label Color 
+                input(type="checkbox", name="#")
+        div(class="productos") 
+          div(class="tarjetas-seccion flex-space-between")
+            block tarjeta
+
+
+
+  
+
